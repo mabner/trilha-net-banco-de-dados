@@ -6,7 +6,7 @@ GO
 
 -- Criação da tabela
 CREATE TABLE [dbo].[Clientes](
-	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Id] [int] PRIMARY KEY IDENTITY(1,1) NOT NULL,
 	[Nome] [varchar](255) NULL,
 	[Sobrenome] [varchar](255) NULL,
 	[Email] [varchar](255) NULL,
