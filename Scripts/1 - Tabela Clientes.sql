@@ -4,14 +4,17 @@
 SET LANGUAGE 'us_english';
 GO
 
+DROP TABLE IF EXISTS dbo.Clientes;
+GO
+
 -- Criação da tabela
 CREATE TABLE [dbo].[Clientes](
-	[Id] [int] PRIMARY KEY IDENTITY(1,1) NOT NULL,
-	[Nome] [varchar](255) NULL,
-	[Sobrenome] [varchar](255) NULL,
-	[Email] [varchar](255) NULL,
-	[AceitaComunicados] [bit] NULL,
-	[DataCadastro] [datetime2](7) NULL
+	Id int PRIMARY KEY IDENTITY(1,1) NOT NULL,
+	Nome varchar(255) NULL,
+	Sobrenome varchar(255) NULL,
+	Email varchar(255) NULL,
+	AceitaComunicados bit NULL,
+	DataCadastro datetime2(7) NULL
 ) ON [PRIMARY]
 GO
 
