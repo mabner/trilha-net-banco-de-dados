@@ -13,3 +13,7 @@ CREATE TABLE Enderecos (
 	CONSTRAINT FK_Enderecos_Clientes FOREIGN KEY(IdCliente)
 	REFERENCES Clientes(Id)
 )
+GO
+
+INSERT INTO Enderecos VALUES (4, 'Rua Teste', 'Bairro Teste', 'Cidade Teste', 'SP');
+GO
